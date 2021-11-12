@@ -1,0 +1,132 @@
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
+  color: #222222;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Title */
+
+.title {
+  background: url("https://i.picsum.photos/id/569/1980/1080.jpg?hmac=zbvUxwxMPlGQW-q0vI8MNHE35jYZ1pYwFEhpy3ph2S0")
+    no-repeat left top;
+  height: 650px;
+}
+
+.title__info {
+  text-align: center;
+}
+
+.title__info h1 {
+  color: rgb(34, 124, 34);
+  font-size: 2.5em;
+}
+
+.title__info h2 {
+  color: rgb(0, 0, 0);
+  font-size: 1.25em;
+}
+
+/* Display */
+
+.display {
+  background-color: rgb(51, 49, 46);
+}
+
+.display__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.display__item {
+  flex: 1;
+  margin: 20px;
+}
+
+.display__item img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.display__item h2 {
+  color: rgb(236, 234, 234);
+  text-align: center;
+}
+
+.display__item p {
+  color: rgb(211, 211, 211);
+  text-align: center;
+}
+
+/* About */
+
+.about {
+  background: #474747;
+  padding: 60px calc((100% - 960px) / 2);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about__img {
+  clip-path: circle();
+  flex: 2 1 260px;
+  margin: 0 10px;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about__img:hover {
+  transform: scale(2);
+  transition: 1s;
+}
+
+.about__text {
+  flex: 1 1 200px;
+  margin: 0 10px;
+  text-align: center;
+  color: rgb(221, 221, 221);
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  background: rgb(51, 49, 46);
+  align-items: center;
+  height: 100px;
+}
+
+.footer p {
+  flex: 1;
+  text-align: center;
+  font-size: 2.25em;
+  color: white;
+}
