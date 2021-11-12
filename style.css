@@ -36,7 +36,7 @@ img {
 .title {
   background: url("https://i.picsum.photos/id/569/1980/1080.jpg?hmac=zbvUxwxMPlGQW-q0vI8MNHE35jYZ1pYwFEhpy3ph2S0")
     no-repeat left top;
-  height: 1080px;
+  height: 650px;
 }
 
 .title__info {
@@ -70,6 +70,11 @@ img {
   margin: 20px;
 }
 
+.display__item img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
 .display__item h2 {
   color: rgb(236, 234, 234);
   text-align: center;
@@ -96,6 +101,11 @@ img {
   align-self: center;
   display: flex;
   flex-wrap: wrap;
+}
+
+.about__img:hover {
+  transform: scale(2);
+  transition: 1s;
 }
 
 .about__text {
